@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UI">
+      <UniqueIdentifier>{49161d83-81de-481b-bf0c-88146807e492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometric Objects">
+      <UniqueIdentifier>{c311ff40-0813-4b5c-830a-8dc2abd04726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{35fa4c0d-30a0-4bb1-9e38-29a878fbba43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{f160dfaa-4076-40a9-9290-fdaadf7266e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tracers">
+      <UniqueIdentifier>{8c1bdb0c-4ef6-41dc-85fb-a4e3dbec3d67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Materials">
+      <UniqueIdentifier>{384a549d-fa1b-4292-bcfe-436eead9aa5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BRDFs">
+      <UniqueIdentifier>{1d05e556-c39e-4bea-b0cb-08e9535e3db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cameras">
+      <UniqueIdentifier>{ec81c7cc-3a5b-431f-bcde-34c5577f6370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights">
+      <UniqueIdentifier>{83cc2c0c-e9d9-42c2-b1ac-75a8536426de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UI\wxraytracer.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Matrix.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Normal.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Point2D.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Point3D.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Ray.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\RGBColor.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\ShadeRec.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Vector3D.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometric Objects\GeometricObject.cpp">
+      <Filter>Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometric Objects\Plane.cpp">
+      <Filter>Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometric Objects\Sphere.cpp">
+      <Filter>Geometric Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="World\ViewPlane.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="World\World.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracers\SingleSphere.cpp">
+      <Filter>Tracers</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracers\Tracer.cpp">
+      <Filter>Tracers</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\Material.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\Matte.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDFs\BRDF.cpp">
+      <Filter>BRDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="BRDFs\Lambertian.cpp">
+      <Filter>BRDFs</Filter>
+    </ClCompile>
+    <ClCompile Include="Cameras\Camera.cpp">
+      <Filter>Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="Cameras\Pinhole.cpp">
+      <Filter>Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\Ambient.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\Directional.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights\Light.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracers\RayCast.cpp">
+      <Filter>Tracers</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracers\MultipleObjects.cpp">
+      <Filter>Tracers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UI\wxraytracer.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometric Objects\GeometricObject.h">
+      <Filter>Geometric Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Constants.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Maths.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Matrix.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Normal.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Point2D.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Point3D.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Ray.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\RGBColor.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\ShadeRec.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Vector3D.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometric Objects\Plane.h">
+      <Filter>Geometric Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometric Objects\Sphere.h">
+      <Filter>Geometric Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="World\ViewPlane.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\World.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracers\SingleSphere.h">
+      <Filter>Tracers</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracers\Tracer.h">
+      <Filter>Tracers</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\Material.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\Matte.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDFs\BRDF.h">
+      <Filter>BRDFs</Filter>
+    </ClInclude>
+    <ClInclude Include="BRDFs\Lambertian.h">
+      <Filter>BRDFs</Filter>
+    </ClInclude>
+    <ClInclude Include="Cameras\Camera.h">
+      <Filter>Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="Cameras\Pinhole.h">
+      <Filter>Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\Ambient.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\Directional.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights\Light.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracers\RayCast.h">
+      <Filter>Tracers</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracers\MultipleObjects.h">
+      <Filter>Tracers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

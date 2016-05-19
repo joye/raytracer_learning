@@ -1,0 +1,85 @@
+﻿  World.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\build\buildshadedobjects.cpp(95): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\build\buildshadedobjects.cpp(96): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\build\buildshadedobjects.cpp(98): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\build\buildshadedobjects.cpp(99): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\build\buildshadedobjects.cpp(100): warning C4305: 'argument': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\build\buildshadedobjects.cpp(101): warning C4305: 'argument': truncation from 'double' to 'float'
+  ViewPlane.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Vector3D.cpp
+  ShadeRec.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  RGBColor.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.cpp(60): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Ray.cpp
+  Point3D.cpp
+  Point2D.cpp
+  Normal.cpp
+  Matrix.cpp
+  wxraytracer.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Tracer.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  SingleSphere.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  RayCast.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  MultipleObjects.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Matte.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\materials\matte.cpp(91): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Material.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Light.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Directional.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Ambient.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Compiling...
+  Sphere.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Plane.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\geometric objects\plane.cpp(69): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  GeometricObject.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Pinhole.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\world\viewplane.h(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\cameras\pinhole.cpp(89): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\cameras\pinhole.cpp(90): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\cameras\pinhole.cpp(95): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+  Camera.cpp
+  Lambertian.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\learnings\renderings\raytracer\raytracer_learning\brdfs\lambertian.cpp(55): warning C4244: 'argument': conversion from 'const double' to 'const float', possible loss of data
+  BRDF.cpp
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\rgbcolor.h(142): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\learnings\renderings\raytracer\raytracer_learning\utilities\constants.h(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Generating Code...
+  raytracer_mini.vcxproj -> E:\learnings\renderings\raytracer\raytracer_learning\Debug\raytracer_mini.exe
