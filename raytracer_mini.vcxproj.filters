@@ -28,6 +28,9 @@
     <Filter Include="Lights">
       <UniqueIdentifier>{83cc2c0c-e9d9-42c2-b1ac-75a8536426de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sampler">
+      <UniqueIdentifier>{99af1182-c0f5-498a-bb6a-d4e1499ba567}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UI\wxraytracer.cpp">
@@ -110,6 +113,27 @@
     </ClCompile>
     <ClCompile Include="Tracers\MultipleObjects.cpp">
       <Filter>Tracers</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler\Sampler.cpp">
+      <Filter>Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler\Hammersley.cpp">
+      <Filter>Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler\Jittered.cpp">
+      <Filter>Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler\MultiJittered.cpp">
+      <Filter>Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler\NRooks.cpp">
+      <Filter>Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler\PureRandom.cpp">
+      <Filter>Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler\Regular.cpp">
+      <Filter>Sampler</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +223,27 @@
     </ClInclude>
     <ClInclude Include="Tracers\MultipleObjects.h">
       <Filter>Tracers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler\Sampler.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler\Hammersley.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler\Jittered.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler\MultiJittered.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler\NRooks.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler\PureRandom.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler\Regular.h">
+      <Filter>Sampler</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

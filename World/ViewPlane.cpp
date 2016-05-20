@@ -1,7 +1,9 @@
 // This file contains the definition the ViewPlane class
 
 #include "ViewPlane.h"
-	
+#include "Sampler/Sampler.h"
+#include "Sampler/MultiJittered.h"
+#include "Sampler/Regular.h"
 // ---------------------------------------------------------------- default constructor	
 						
 ViewPlane::ViewPlane(void)							
@@ -51,9 +53,30 @@ ViewPlane::operator= (const ViewPlane& rhs) {
 
 ViewPlane::~ViewPlane(void) {}
 
+void ViewPlane::set_sampler(Sampler* sampler)
+{
+	if (sampler_ptr)
+	{
+		delete sampler_ptr;
+		sampler_ptr = NULL;
+	}
+	num_samples = sampler->get_num_samples();
+	this->sampler_ptr = sampler;
+}
 
 
-
+void ViewPlane::set_samples(const int n) {
+	num_samples = n;
+	if (sampler_ptr)
+	{
+		delete sampler_ptr;
+		sampler_ptr = nullptr;
+	}
+	if (num_samples > 1)
+		sampler_ptr = new MultiJittered(num_samples);
+	else
+		sampler_ptr = new Regular(1);
+}
 
 
 	

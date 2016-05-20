@@ -37,6 +37,7 @@
 #include "Utilities/Maths.h"
 
 // build functions
+#include "Sampler/Regular.h"
 
 #include "build/BuildShadedObjects.cpp"
 
@@ -96,13 +97,25 @@ World::render_scene(void) const {
 	int 		vres 	= vp.vres;
 	float		s		= vp.s;
 	float		zw		= 100.0;				// hardwired in
-
+	Point2D     sp;
+	Point2D     pp;
 	ray.d = Vector3D(0, 0, -1);
 	
 	for (int r = 0; r < vres; r++)			// up
-		for (int c = 0; c <= hres; c++) {	// across 					
-			ray.o = Point3D(s * (c - hres / 2.0 + 0.5), s * (r - vres / 2.0 + 0.5), zw);
-			pixel_color = tracer_ptr->trace_ray(ray);
+		for (int c = 0; c <= hres; c++) {	// across 		
+			pixel_color = black;
+			for (int j = 0; j < vp.num_samples; j++)
+			{
+				sp = vp.sampler_ptr->sample_unit_square();
+				pp.x = vp.s * (c - 0.5 * hres + sp.x);
+				pp.y = vp.s * (r - 0.5 * vres + sp.y);
+				ray.o = Point3D(pp.x, pp.y, zw);
+				pixel_color += tracer_ptr->trace_ray(ray);
+			}
+			//ray.o = Point3D(s * (c - hres / 2.0 + 0.5), s * (r - vres / 2.0 + 0.5), zw);
+			//pixel_color = tracer_ptr->trace_ray(ray);
+			pixel_color /= vp.num_samples;
+
 			display_pixel(r, c, pixel_color);
 		}	
 }  
@@ -185,7 +198,7 @@ World::hit_objects(const Ray& ray) {
 			sr.hit_an_object	= true;
 			tmin 				= t;
 			sr.material_ptr     = objects[j]->get_material();
-			//sr.color = sr.material_ptr->shade(sr);
+			sr.color = sr.material_ptr->shade(sr);
 			sr.hit_point 		= ray.o + t * ray.d;
 			normal 				= sr.normal;
 			local_hit_point	 	= sr.local_hit_point;
