@@ -83,7 +83,8 @@ class World {
 		ShadeRec
 		hit_objects(const Ray& ray);
 		
-						
+		//void render_perspective(void) const;
+
 	private:
 		
 		void 

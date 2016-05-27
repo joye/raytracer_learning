@@ -23,7 +23,7 @@
 // lights
 
 #include "Lights/Directional.h"
-
+#include "Lights/PointLight.h"
 // materials
 
 #include "Materials/Matte.h"
@@ -120,13 +120,33 @@ World::render_scene(void) const {
 		}	
 }  
 
-
+/*
+void World::render_perspective(void) const
+{
+	RGBColor pixel_color;
+	Ray      ray;
+	int 		hres = vp.hres;
+	int 		vres = vp.vres;
+	int         s = vp.s;
+	float       zw = 100.0;
+	ray.o = Point3D(0.0, 0.0, zw);
+	for (int r = 0; r < vres; r++)
+	{
+		for (int c = 0; c < hres; c++)
+		{
+			ray.d = Vector3D(s * (c - 0.5 *(hres - 1.0)), s * (r - 0.5*(vres - 1.0)), -d);
+			ray.d.normalize();
+			pixel_color = tracer_ptr->trace_ray(ray);
+			display_pixel(r, c, pixel_color);
+		}
+	}
+}*/
 // ------------------------------------------------------------------ clamp
 
 RGBColor
-World::max_to_one(const RGBColor& c) const  {
+World::max_to_one(const RGBColor& c) const {
 	float max_value = max(c.r, max(c.g, c.b));
-	
+
 	if (max_value > 1.0)
 		return (c / max_value);
 	else
@@ -140,11 +160,11 @@ World::max_to_one(const RGBColor& c) const  {
 RGBColor
 World::clamp_to_color(const RGBColor& raw_color) const {
 	RGBColor c(raw_color);
-	
+
 	if (raw_color.r > 1.0 || raw_color.g > 1.0 || raw_color.b > 1.0) {
 		c.r = 1.0; c.g = 0.0; c.b = 0.0;
 	}
-		
+
 	return (c);
 }
 
@@ -168,50 +188,52 @@ World::display_pixel(const int row, const int column, const RGBColor& raw_color)
 		mapped_color = clamp_to_color(raw_color);
 	else
 		mapped_color = max_to_one(raw_color);
-	
+
 	if (vp.gamma != 1.0)
 		mapped_color = mapped_color.powc(vp.inv_gamma);
-	
-   //have to start from max y coordinate to convert to screen coordinates
-   int x = column;
-   int y = vp.vres - row - 1;
 
-   paintArea->setPixel(x, y, (int)(mapped_color.r * 255),
-                             (int)(mapped_color.g * 255),
-                             (int)(mapped_color.b * 255));
+	//have to start from max y coordinate to convert to screen coordinates
+	int x = column;
+	int y = vp.vres - row - 1;
+
+	paintArea->setPixel(x, y, (int)(mapped_color.r * 255),
+		(int)(mapped_color.g * 255),
+		(int)(mapped_color.b * 255));
 }
 
 // ----------------------------------------------------------------------------- hit_objects
 
-ShadeRec									
+ShadeRec
 World::hit_objects(const Ray& ray) {
 
-	ShadeRec	sr(*this); 
+	ShadeRec	sr(*this);
 	double		t;
 	Normal normal;
 	Point3D local_hit_point;
-	double		tmin 			= kHugeValue;
-	int 		num_objects 	= objects.size();
-	
+	double		tmin = kHugeValue;
+	int 		num_objects = objects.size();
+
 	for (int j = 0; j < num_objects; j++)
 		if (objects[j]->hit(ray, t, sr) && (t < tmin)) {
-			sr.hit_an_object	= true;
-			tmin 				= t;
-			sr.material_ptr     = objects[j]->get_material();
+			sr.hit_an_object = true;
+			tmin = t;
+			sr.material_ptr = objects[j]->get_material();
 			sr.color = sr.material_ptr->shade(sr);
-			sr.hit_point 		= ray.o + t * ray.d;
-			normal 				= sr.normal;
-			local_hit_point	 	= sr.local_hit_point;
+			sr.hit_point = ray.o + t * ray.d;
+			normal = sr.normal;
+			local_hit_point = sr.local_hit_point;
 		}
-  
-	if(sr.hit_an_object) {
+
+	if (sr.hit_an_object) {
 		sr.t = tmin;
 		sr.normal = normal;
 		sr.local_hit_point = local_hit_point;
 	}
-		
-	return(sr);   
+
+	return(sr);
 }
+
+
 
 
 

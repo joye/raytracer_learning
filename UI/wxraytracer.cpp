@@ -475,8 +475,8 @@ void *RenderThread::Entry()
 	lastUpdateTime = 0;
 	timer = new wxStopWatch();
 
-	world->render_scene(); //for bare bones ray tracer only
-	//world->camera_ptr->render_scene(*world);
+	//world->render_scene(); //for bare bones ray tracer only
+	world->camera_ptr->render_scene(*world);
 
 	return NULL;
 }

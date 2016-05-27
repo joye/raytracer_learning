@@ -30,7 +30,9 @@ class Light {
 		get_direction(ShadeRec& sr) = 0;				
 																
 		virtual RGBColor														
-		L(ShadeRec& sr);								
+		L(ShadeRec& sr);	
+protected:
+	    bool shadows;
 };
 
 #endif
